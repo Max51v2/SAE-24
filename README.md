@@ -1,3 +1,6 @@
+Présentation :
+Ensemble de scripts qui allument et éteignent le courant par le biais d'un relais connecté à un raspberry pi afin d'allumer et d'éteindre le matériel (Switch qui les alimente en PoE) des salles de l'iut Nancy-Brabois.
+
 Mise en place des scripts:
 1) Verser tous les scripts dans le répertoire Téléchargements (ou downloads)
 
@@ -25,14 +28,24 @@ END{
 
 Mise en place de l'arduino (modèle 3 b+)
 
+1) installer python et la librairie gpiozero
+Sudo apt install python3
+sudo apt install python3-gpiozero
+sudo apt install python-gpiozero
+
+Attention : vérifier que le daemon pigpiod est démarré (il ne démarre pas par défaut)
+=> démarrage : systemctl start pigpiod
+
+3) Mise en place du matériel (LED dans le cas d'une demo)
+
 +-----------------------+
 |               .  .    |
 |               .  .    |
 |               .  .    |
 |               .  .    |
-|               .1 .    |   1) Résistance (1K) + LED Verte => Masse
-|               .2 .    |   2) Résistance (1K) + LED Rouge => Masse
-|               .3 .    |   3) Masse
+|               .1 .    |   1) GPIO 4 : Résistance (1K) + LED Verte => Masse
+|               .2 .    |   2) GPIO 27 : Résistance (1K) + LED Rouge => Masse
+|               .3 .    |   3) GND : Masse
 |               .  .    |
 |               .  .    |
 |               .  .    |
@@ -76,9 +89,6 @@ Utilité de chaque fichier :
     -actualisation du ou des calendrier(s) à des horaires définis
     -actualisation de l'état à un intervalle donné
 
-A faire :
--Se renseigner sur SNMP
--Ajouter les requêtes afin d'allumer et d'éteindre la (ou les) multiprise(s)
 
 Plan d'action :
 - Si multiprise :
