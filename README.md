@@ -1,10 +1,11 @@
 Présentation :
-Ensemble de scripts qui allument et éteignent le courant par le biais d'un relais connecté à un raspberry pi afin d'allumer et d'éteindre le matériel (Switch qui les alimente en PoE) des salles de l'iut Nancy-Brabois.
+Ensemble de scripts qui permettent d'ouvrir et couper l'alimentation d'un Switch qui alimente en PoE les pc des salles de l'iut Nancy-Brabois par le biais d'un raspbery pi connecté au réseau.
+L'objectif de ces scripts est de gérer l'alimentation du matériel des salles en fonction de leur occupation (déterminée par ADE).
 
 Mise en place des scripts:
-1) Verser tous les scripts dans le répertoire Téléchargements (ou downloads)
+1) Verser tous les scripts dans le répertoire Téléchargements
 
-2) Copier le paragraphe ci-dessous dans le terminal :
+2) Copier le paragraphe ci-dessous dans le terminal (Linux):
 
 cd
 ls | awk '
@@ -42,10 +43,10 @@ Attention : vérifier que le daemon pigpiod est démarré (il ne démarre pas pa
 |               .  .    |
 |               .  .    |
 |               .  .    |
-|               .  .    |
-|               .1 .    |   1) GPIO 4 : Résistance (1K) + LED Verte => Masse
-|               .2 .    |   2) GPIO 27 : Résistance (1K) + LED Rouge => Masse
-|               .3 .    |   3) GND : Masse
+|               .1 .    |
+|               .3 .    |   1) GPIO 4 : Résistance (1K) + LED Verte => Masse
+|               .  .    |   2) GPIO 27 : Résistance (1K) + LED Rouge => Masse
+|               .2 .    |   3) GND : Masse
 |               .  .    |
 |               .  .    |
 |               .  .    |
