@@ -70,6 +70,18 @@ Attention : vérifier que le daemon pigpiod est démarré (il ne démarre pas pa
 +-----------------------+
 
 
+4) Modification des paramètres
+Veuillez changer les paramètres contenus entre les deux lignes contenant des # afin d'adapter le script selon vos contraintes
+Les liens correspondant aux emplois du temps sont amenés à varier selon les années, afin de pallier ce problème il est recommandé de vérifier qu'ils sont corrects en cas de problèmes (s'il ne se produit rien lors de l'execution du script).
+Démarche pour récupérer les liens :
+    - Ouvrir l'ENT et appuyer sur la tuile "Planning global UL"
+    - taper le nom de la salle dans la barre de recherche
+    - cliquer sur le logo contenant un agenda (en bas à gauche)
+    - cliquer sur "générer url" dans la fenêtre qui s'est ouverte
+    - copier puis retirez le numéro contenant la semaine à la fin du liens (indiqué XX dans l'exemple)
+      => ex : https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18294&projectId=11&calType=ical&nbWeeks=XX
+
+
 ##############################################################
 
 commandes scripts :
