@@ -2,22 +2,22 @@
 
 #Création du dictionnaire sous la forme dict_link["salle"]=liens
 declare -A dict_link
-dict_link["Shannon11"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18307&projectId=11&calType=ical&nbWeeks="
-dict_link["Shannon12"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18306&projectId=11&calType=ical&nbWeeks="
-dict_link["Tanenbaum"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=14396&projectId=11&calType=ical&nbWeeks="
-dict_link["Edison"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18292&projectId=11&calType=ical&nbWeeks="
-dict_link["Chappe"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18308&projectId=11&calType=ical&nbWeeks="
-dict_link["Bell"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18291&projectId=11&calType=ical&nbWeeks="
-dict_link["Zimmermann"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18293&projectId=11&calType=ical&nbWeeks="
-dict_link["Backus"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18294&projectId=11&calType=ical&nbWeeks="
-dict_link["Von-neumann"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18295&projectId=11&calType=ical&nbWeeks="
-dict_link["Ritchie"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18296&projectId=11&calType=ical&nbWeeks="
-dict_link["TD21"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18321&projectId=11&calType=ical&nbWeeks="
-dict_link["TD22"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18320&projectId=11&calType=ical&nbWeeks="
-dict_link["TD23"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18319&projectId=11&calType=ical&nbWeeks="
-dict_link["TD24"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18318&projectId=11&calType=ical&nbWeeks="
-dict_link["TD25"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18317&projectId=11&calType=ical&nbWeeks="
-dict_link["TD26"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18316&projectId=11&calType=ical&nbWeeks="
+dict_link["Shannon11"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18307&projectId=12&calType=ical&nbWeeks="
+dict_link["Shannon12"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18306&projectId=12&calType=ical&nbWeeks="
+dict_link["Tanenbaum"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=14396&projectId=12&calType=ical&nbWeeks="
+dict_link["Edison"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18292&projectId=12&calType=ical&nbWeeks="
+dict_link["Chappe"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18308&projectId=12&calType=ical&nbWeeks="
+dict_link["Bell"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18291&projectId=12&calType=ical&nbWeeks="
+dict_link["Zimmermann"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18293&projectId=12&calType=ical&nbWeeks="
+dict_link["Backus"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18294&projectId=12&calType=ical&nbWeeks="
+dict_link["Von-neumann"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18295&projectId=12&calType=ical&nbWeeks="
+dict_link["Ritchie"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18296&projectId=12&calType=ical&nbWeeks="
+dict_link["TD21"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18321&projectId=12&calType=ical&nbWeeks="
+dict_link["TD22"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18320&projectId=12&calType=ical&nbWeeks="
+dict_link["TD23"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18319&projectId=12&calType=ical&nbWeeks="
+dict_link["TD24"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18318&projectId=12&calType=ical&nbWeeks="
+dict_link["TD25"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18317&projectId=12&calType=ical&nbWeeks="
+dict_link["TD26"]="https://planning.univ-lorraine.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=18316&projectId=12&calType=ical&nbWeeks="
 
 
 #Création d'un dictionnaire sous la forme : dict_IP_target["salle"]="@IP_target"
@@ -62,7 +62,7 @@ h_fin=21
 Salles=("Shannon11" "Shannon12" "Tanenbaum" "Edison" "Chappe" "Bell" "Zimmermann" "Backus" "Von-neumann" "Ritchie" "TD21" "TD22" "TD23" "TD24" "TD25" "TD26")
 
 #Raspberry Pi
-port=4 #LED verte
+port=17 #LED verte
 port2=27 #LED Rouge
 #####################################################################################
 
@@ -234,7 +234,7 @@ do
             #Trace d'exécution
             #{ echo $str; echo ":"; echo $mode; echo ":"; echo ${dict_todo[$str]}; echo ":"; echo $state; echo ":"; date +%d-%m-%Y/%T; } | sed ':a;N;s/\n/ /;ba' >> trace.txt
 
-            #On change l'état de la salle (pas encore fait)
+            #On change l'état de la salle
             if [ "$state" = "CHANGE" ] #trace
             then
                 act="1"
